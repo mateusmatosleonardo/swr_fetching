@@ -5,6 +5,7 @@ import { api } from '../services/api';
 
 const defaultOptions: SWRConfiguration = {
   revalidateOnFocus: false,
+  refreshInterval: 5000 * 60, // 5 minutos
 };
 
 export function useFetch<Data = unknown, Error = unknown>(
